@@ -1,5 +1,7 @@
 <template>
-    <div>这是一个button组件1122</div>
+    <button :disabled="disabled" :class="[ns.b(), ns.m(type), ns.is('round', round), ns.is('disabled', disabled)]">
+        <span>这是一个button组件这是一个button组件</span>
+    </button>
 </template>
 
 <script setup>
@@ -8,8 +10,31 @@ defineOptions({
     name: 'CloudButton'
 })
 
-const ns = useNamespace()
-console.log(ns.namespace, 'useNamespace');
+defineProps({
+    type: {
+        type: String,
+        default: ''
+    },
+    size: {
+        type: String,
+        default: 'default'
+    },
+    disabled: {
+        type: Boolean,
+        default: false
+    },
+    loading: {
+        type: Boolean,
+        default: false
+    },
+    round: {
+        type: Boolean,
+        default: false
+    }
+})
+
+const ns = useNamespace('button')
+console.log(ns.b(), 'useNamespace');
 
 </script>
 

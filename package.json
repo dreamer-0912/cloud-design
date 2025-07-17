@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-examples": "pnpm --filter examples dev"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "@cloud-design/components": "workspace:^",
     "@cloud-design/hooks": "workspace:^",
+    "@cloud-design/theme": "workspace:^",
     "@cloud-design/utils": "workspace:^"
   }
 }

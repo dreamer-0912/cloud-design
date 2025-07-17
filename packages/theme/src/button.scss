@@ -1,0 +1,93 @@
+.cloud-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 80px;
+    padding: 0 10px;
+    height: 32px;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: #e3e6f1;
+    background-color: #fff;
+    border-style: solid;
+    font-size: 14px;
+    color: #4d5059;
+    word-break: keep-all;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+
+    span {
+        line-height: 1;
+    }
+
+    &.is-round {
+        border-radius: 100px;
+    }
+
+    &.is-disabled {
+        border-color: #ebeef5;
+        color: #abb1bf;
+        cursor: not-allowed
+    }
+
+}
+
+.cloud-button--primary {
+    background-color: #3069ff;
+    border-color: #3069ff;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background-color: #6196ff;
+        border-color: #6196ff;
+    }
+
+    &.is-disabled {
+        background-color: #98b4ff;
+        border-color: #98b4ff;
+        color: #fff;
+        cursor: not-allowed
+    }
+}
+
+.cloud-button--success {
+    background-color: #14cd70;
+    border-color: #14cd70;
+    color: #fff;
+
+    &.is-disabled {
+        background-color: #8ae6b8;
+        border-color: #8ae6b8;
+        color: #fff;
+        cursor: not-allowed
+    }
+}
+
+.cloud-button--warning {
+    background-color: #ffa81a;
+    border-color: #ffa81a;
+    color: #fff;
+
+    &.is-disabled {
+        background-color: #ffd48d;
+        border-color: #ffd48d;
+        color: #fff;
+        cursor: not-allowed
+    }
+}
+
+.cloud-button--danger {
+    background-color: #ff4a5b;
+    border-color: #ff4a5b;
+    color: #fff;
+
+    &.is-disabled {
+        background-color: #ffa5ad;
+        border-color: #ffa5ad;
+        color: #fff;
+        cursor: not-allowed
+    }
+}
